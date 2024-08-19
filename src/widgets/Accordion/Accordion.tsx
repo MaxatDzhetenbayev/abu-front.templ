@@ -16,7 +16,7 @@ function Accordion({ items }: AccordionProps) {
     <AccordionUI type="single" collapsible>
       {items.map((item, idx) => (
         <AccordionItem key={idx} value={item.question}>
-          <AccordionTrigger className="text-xl text-cyan-500">
+          <AccordionTrigger className="text-xl text-[#640000]">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="text-lg">{item.answer}</AccordionContent>
