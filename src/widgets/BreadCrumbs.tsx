@@ -42,6 +42,8 @@ export const BreadCrumbs = ({
 }) => {
   const crumbs = getBreadCrumbs(slug, pages);
 
+  if (slug[0] === "home") return null;
+
   return (
     <Breadcrumb>
       <BreadcrumbList>
